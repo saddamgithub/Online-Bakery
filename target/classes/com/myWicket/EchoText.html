@@ -1,0 +1,312 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Evaluation Form
+		</title>
+	</head>
+	<body>
+		<h1> Preceptor Evaluation Form </h1>
+		<form wicket:id = "EvaluationForm">
+			<label>Student Name: </label>
+			<input wicket:id="studentName" type="text" value=""/>
+			<br>
+			<label>Dates of Practicum Experience: </label>
+			<input wicket:id="startDate" type="text" value=""/>
+			<label> to </label>
+			<input wicket:id="endDate" type="text" value=""/>
+			<br>
+			<label>Evaluation prepared by(Preceptor): </label>
+			<input wicket:id="preceptorName" type="text" value=""/>
+			<br>
+			<label>Please check the box next to appropriate rating: </label>
+			<table border="1" width="100%">
+				<tr>
+					<th>Performance Dimension</th>	
+					<th>Not Applicable</th>
+					<th>Poor</th>
+					<th>Fair</th>
+					<th>Good</th>
+					<th>Very Good</th>
+					<th>Excellent</th>
+				</tr>
+				<tr>
+					<td><b>1. Communication</b></td>
+				</tr>
+				<tr>
+					<td>Oral</td>	
+					<wicket:container wicket:id="OralRadio">
+		                <td><input wicket:id="NA" type="radio" name="oral" /></td>
+		                <td><input wicket:id="poor" type="radio" name="oral"/></td>
+		                <td><input wicket:id="fair" type="radio" name="oral"/></td>
+						<td><input wicket:id="good" type="radio" name="oral"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="oral"/></td>
+						<td><input wicket:id="excellent" type="radio" name="oral"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Written</td>	
+					<wicket:container wicket:id="WrittenRadio">
+		                <td><input wicket:id="NA" type="radio" name="Written" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Written"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Written"/></td>
+						<td><input wicket:id="good" type="radio" name="Written"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Written"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Written"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Presentation Skills</td>	
+					<wicket:container wicket:id="PresentationRadio">
+		                <td><input wicket:id="NA" type="radio" name="Presentation" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Presentation"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Presentation"/></td>
+						<td><input wicket:id="good" type="radio" name="Presentation"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Presentation"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Presentation"/></td>
+	            	</wicket:container>
+				</tr>
+				
+				<tr>
+					<td><b> 2. Knowledge of healthcare and public health environment</b></td>	
+					<wicket:container wicket:id="KnowledgeRadio">
+		                <td><input wicket:id="NA" type="radio" name="Knowledge" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Knowledge"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Knowledge"/></td>
+						<td><input wicket:id="good" type="radio" name="Knowledge"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Knowledge"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Knowledge"/></td>
+	            	</wicket:container>
+				</tr>
+				
+				<tr>
+					<td><b> 3. Ability to implement academic preparation to praccticum experience setting</b></td>	
+					<wicket:container wicket:id="AcademicAbilityRadio">
+		                <td><input wicket:id="NA" type="radio" name="AcademicAbility" /></td>
+		                <td><input wicket:id="poor" type="radio" name="AcademicAbility"/></td>
+		                <td><input wicket:id="fair" type="radio" name="AcademicAbility"/></td>
+						<td><input wicket:id="good" type="radio" name="AcademicAbility"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="AcademicAbility"/></td>
+						<td><input wicket:id="excellent" type="radio" name="AcademicAbility"/></td>
+	            	</wicket:container>
+				</tr>
+				
+				<tr>
+					<td><b>4. Ability to work independently</b></td>
+				</tr>
+				<tr>
+					<td>Asks appropriate questions</td>	
+					<wicket:container wicket:id="IndependentAbilityRadio1">
+		                <td><input wicket:id="NA" type="radio" name="IndependentAbility1" /></td>
+		                <td><input wicket:id="poor" type="radio" name="IndependentAbility1"/></td>
+		                <td><input wicket:id="fair" type="radio" name="IndependentAbility1"/></td>
+						<td><input wicket:id="good" type="radio" name="IndependentAbility1"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="IndependentAbility1"/></td>
+						<td><input wicket:id="excellent" type="radio" name="IndependentAbility1"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Knows own limitations and seeks assistance when appropriate</td>	
+					<wicket:container wicket:id="IndependentAbilityRadio2">
+		                <td><input wicket:id="NA" type="radio" name="IndependentAbility2" /></td>
+		                <td><input wicket:id="poor" type="radio" name="IndependentAbility2"/></td>
+		                <td><input wicket:id="fair" type="radio" name="IndependentAbility2"/></td>
+						<td><input wicket:id="good" type="radio" name="IndependentAbility2"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="IndependentAbility2"/></td>
+						<td><input wicket:id="excellent" type="radio" name="IndependentAbility2"/></td>
+	            	</wicket:container>
+				</tr>
+
+				<tr>
+					<td><b>5. Teamwork Ability</b></td>
+				</tr>
+				<tr>
+					<td>Can communicate and listen to ideas of others</td>	
+					<wicket:container wicket:id="TeamworkAbilityRadio1">
+		                <td><input wicket:id="NA" type="radio" name="TeamworkAbility1" /></td>
+		                <td><input wicket:id="poor" type="radio" name="TeamworkAbility1"/></td>
+		                <td><input wicket:id="fair" type="radio" name="TeamworkAbility1"/></td>
+						<td><input wicket:id="good" type="radio" name="TeamworkAbility1"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="TeamworkAbility1"/></td>
+						<td><input wicket:id="excellent" type="radio" name="TeamworkAbility1"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Complete assigned group tasks</td>	
+					<wicket:container wicket:id="TeamworkAbilityRadio2">
+		                <td><input wicket:id="NA" type="radio" name="TeamworkAbility2" /></td>
+		                <td><input wicket:id="poor" type="radio" name="TeamworkAbility2"/></td>
+		                <td><input wicket:id="fair" type="radio" name="TeamworkAbility2"/></td>
+						<td><input wicket:id="good" type="radio" name="TeamworkAbility2"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="TeamworkAbility2"/></td>
+						<td><input wicket:id="excellent" type="radio" name="TeamworkAbility2"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Values ideas and contributions of others</td>	
+					<wicket:container wicket:id="TeamworkAbilityRadio3">
+		                <td><input wicket:id="NA" type="radio" name="TeamworkAbility3" /></td>
+		                <td><input wicket:id="poor" type="radio" name="TeamworkAbility3"/></td>
+		                <td><input wicket:id="fair" type="radio" name="TeamworkAbility3"/></td>
+						<td><input wicket:id="good" type="radio" name="TeamworkAbility3"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="TeamworkAbility3"/></td>
+						<td><input wicket:id="excellent" type="radio" name="TeamworkAbility3"/></td>
+	            	</wicket:container>
+				</tr>			
+				
+				<tr>
+					<td><b>6. Initiative</b></td>
+				</tr>
+				<tr>
+					<td>Willingness to undertake new tasks</td>	
+					<wicket:container wicket:id="InitiativeRadio1">
+		                <td><input wicket:id="NA" type="radio" name="Initiative1" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Initiative1"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Initiative1"/></td>
+						<td><input wicket:id="good" type="radio" name="Initiative1"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Initiative1"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Initiative1"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Desire to learn</td>	
+					<wicket:container wicket:id="InitiativeRadio2">
+		                <td><input wicket:id="NA" type="radio" name="Initiative2" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Initiative2"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Initiative2"/></td>
+						<td><input wicket:id="good" type="radio" name="Initiative2"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Initiative2"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Initiative2"/></td>
+	            	</wicket:container>
+				</tr>
+				
+				
+				<tr>
+					<td><b>7. Professionalism</b></td>
+				</tr>
+				<tr>
+					<td>Reports to work on time</td>	
+					<wicket:container wicket:id="ProfessionalismRadio1">
+		                <td><input wicket:id="NA" type="radio" name="Professionalism1" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Professionalism1"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Professionalism1"/></td>
+						<td><input wicket:id="good" type="radio" name="Professionalism1"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Professionalism1"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Professionalism1"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Displays professional demeanor</td>	
+					<wicket:container wicket:id="ProfessionalismRadio2">
+		                <td><input wicket:id="NA" type="radio" name="Professionalism2" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Professionalism2"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Professionalism2"/></td>
+						<td><input wicket:id="good" type="radio" name="Professionalism2"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Professionalism2"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Professionalism2"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Commitment to practicum experience as career development</td>	
+					<wicket:container wicket:id="ProfessionalismRadio3">
+		                <td><input wicket:id="NA" type="radio" name="Professionalism3" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Professionalism3"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Professionalism3"/></td>
+						<td><input wicket:id="good" type="radio" name="Professionalism3"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Professionalism3"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Professionalism3"/></td>
+	            	</wicket:container>
+				</tr>
+				<tr>
+					<td>Demonstrates interest in his/her own development</td>	
+					<wicket:container wicket:id="ProfessionalismRadio4">
+		                <td><input wicket:id="NA" type="radio" name="Professionalism4" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Professionalism4"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Professionalism4"/></td>
+						<td><input wicket:id="good" type="radio" name="Professionalism4"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Professionalism4"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Professionalism4"/></td>
+	            	</wicket:container>
+				</tr>
+				
+				<tr>
+					<td><b> 8. Overall satisfaction with student</b></td>	
+					<wicket:container wicket:id="SatisfactionRadio">
+		                <td><input wicket:id="NA" type="radio" name="Satisfaction" /></td>
+		                <td><input wicket:id="poor" type="radio" name="Satisfaction"/></td>
+		                <td><input wicket:id="fair" type="radio" name="Satisfaction"/></td>
+						<td><input wicket:id="good" type="radio" name="Satisfaction"/></td>
+		                <td><input wicket:id="verygood" type="radio" name="Satisfaction"/></td>
+						<td><input wicket:id="excellent" type="radio" name="Satisfaction"/></td>
+	            	</wicket:container>
+				</tr>
+				
+			</table>
+	
+			
+			<label>9. Did the student fully complete the total hour requirement?</label>
+			<span wicket:id="RequirementRadio">
+			  <input wicket:id="yes" type="radio" name="Requirement"/>Yes
+			  <input wicket:id="no" type="radio" name="Requirement"/>No
+			</span>
+			<br>
+			<label>If no please explain </label>
+			<br>
+			<textarea wicket:id="RequirementExplanation" rows="6" cols="40"></textarea>
+			<br>
+			
+			<label>10. How well did the student accomplish the objectives set forth in the work plan</label>
+			<br>
+			<textarea wicket:id="StudentAccomplishment" rows="6" cols="40"></textarea>
+			<br>
+			
+			<label>11. What responsibilities was this practicum student capable of completing exceptionally well?
+			What skills were very strong?		
+			</label>
+			<br>
+			<textarea wicket:id="Capability" rows="6" cols="40"></textarea>
+			<br>
+			
+			<label>12. What are the student's areas of professional weakness?
+			What skills need improvement?			
+			</label>
+			<br>
+			<textarea wicket:id="ProfessionalWeakness" rows="6" cols="40"></textarea>
+			<br>	
+			<label>12a. Were these areas of weakness and need for skill improvement discussed with student?</label>
+			<span wicket:id="ProfessionalWeaknessRadio">
+			  <input wicket:id="yes" type="radio" name="ProfessionalWeakness1"/>Yes
+			  <input wicket:id="no" type="radio" name="ProfessionalWeakness1"/>No
+			  <input wicket:id="NA" type="radio" name="ProfessionalWeakness1"/>NA
+			</span>
+			<br>
+			<label>12b. If yes, please discribe?		
+			</label>
+			<br>
+			<textarea wicket:id="ProfessionalWeaknessDescription" rows="6" cols="40"></textarea>
+			<br>	
+			
+			<label>13. What additional courses or experiences would you recommend for the student's continued
+			development?			
+			</label>
+			<br>
+			<textarea wicket:id="AdditionalCourses" rows="6" cols="40"></textarea>
+			<br>	
+			
+			<label>14. Describe the contribution the student made to your organization.			
+			</label>
+			<br>
+			<textarea wicket:id="StudentContribution" rows="6" cols="40"></textarea>
+			<br>	
+			
+			<label><b>Any other additional comments:</b>			
+			</label>
+			<br>
+			<textarea wicket:id="AdditionalComments" rows="6" cols="40"></textarea>
+			<br>	
+					
+			
+			<input wicket:id="button" type="submit" value="submit"/>
+		</form>
+		
+	</body>
+</html>

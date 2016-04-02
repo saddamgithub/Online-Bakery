@@ -1,0 +1,8 @@
+<html><head><title>Shibboleth Authentication Request</title></head><body onload="EZproxyCheckBack()"><form name="EZproxyForm" method="POST" action="https://idp.tamu.edu/idp/profile/SAML2/POST/SSO"><input type="hidden" name="RelayState" value="ezp.2aHR0cDovL3Byb3F1ZXN0LnNhZmFyaWJvb2tzb25saW5lLmNvbS9nZXRmaWxlP2l0ZW09Y2pGaE5qTXlPVFJuYVcwNU4zSmhPR1F6T1hBdlkzUXZPUzlsT0hObmFXWXpNR2RtY0dOb00zTXVMMmRwTUdrLQ--">
+<input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9pZHAudGFtdS5lZHUvaWRwL3Byb2ZpbGUvU0FNTDIvUE9TVC9TU08iIElEPSJfMTQ1ODAyMDU1MTgiIElzc3VlSW5zdGFudD0iMjAxNi0wMy0xNVQwNTo0MjozMVoiIFZlcnNpb249IjIuMCIgeG1sbnM6c2FtbHA9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpwcm90b2NvbCI+PHNhbWw6SXNzdWVyIHhtbG5zOnNhbWw9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphc3NlcnRpb24iPnVybjptYWNlOnRhbXUuZWR1OnNoaWJib2xldGg6c3A6dGFtdTphZG1pbmlzdHJhdGl2ZTpsaWJyOmV6cHJveHkubGlicmFyeS50YW11LmVkdTwvc2FtbDpJc3N1ZXI+PHNhbWxwOk5hbWVJRFBvbGljeSBBbGxvd0NyZWF0ZT0iMSIvPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pgo=">
+If your browser does not continue automatically, click <input type="submit" value="here">
+</form><form name="EZproxyTrack"><input type="hidden" name="back" value="1"><script language="JavaScript">
+<!--
+function EZproxyCheckBack() {  var goForward = (document.EZproxyTrack.back.value==1);  document.EZproxyTrack.back.value=2;  document.EZproxyTrack.back.defaultValue=2;  if (goForward) { document.EZproxyForm.submit(); }}
+-->
+</script></body></html>
