@@ -15,3 +15,5 @@ Technical Specifications:
 - HTML
 - CSS
 - JavaScript
+- Jetty
+- Maven
